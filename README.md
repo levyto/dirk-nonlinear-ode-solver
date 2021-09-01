@@ -1,7 +1,9 @@
 # dirk-nonlinear-ode-solver
 
 Solver for nonlinear ODEs of the form
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{cases}&space;y'(t)&space;=&space;f(y,t)&space;\\&space;y(0)&space;=&space;y_0&space;\end{cases}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{cases}&space;y'(t)&space;=&space;f(y,t)&space;\\&space;y(0)&space;=&space;y_0&space;\end{cases}" title="\begin{cases} y'(t) = f(y,t) \\ y(0) = y_0 \end{cases}" /></a>
+
 using the Diagonally Implicit Runge Kutta methods and Newton solver for the solution of nonlinear equations.
 
 ### Usage
