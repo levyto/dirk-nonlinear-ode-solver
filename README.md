@@ -1,18 +1,13 @@
 # dirk-nonlinear-ode-solver
 
 Solver for nonlinear ODEs of the form
-<img src="https://latex.codecogs.com/gif.latex?
-	\begin{cases}
-		y'(t) = f(y,t) \\
-		y(0)  = y_0 
-	\end{cases} 
-" /> 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{cases}&space;y'(t)&space;=&space;f(y,t)&space;\\&space;y(0)&space;=&space;y_0&space;\end{cases}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{cases}&space;y'(t)&space;=&space;f(y,t)&space;\\&space;y(0)&space;=&space;y_0&space;\end{cases}" title="\begin{cases} y'(t) = f(y,t) \\ y(0) = y_0 \end{cases}" /></a>
 using the Diagonally Implicit Runge Kutta methods and Newton solver for the solution of nonlinear equations.
 
 ### Usage
 - Choose 
     - the desirable function `f`, 
-    - its derivative <img src="https://latex.codecogs.com/gif.latex? \partial_y f" /> (`fprime`), 
+    - its derivative <a href="https://www.codecogs.com/eqnedit.php?latex=\partial_y&space;f" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\partial_y&space;f" title="\partial_y f" /></a> (`fprime`), 
     - initial condition `yO` and 
     - the exact solution `exact`
 - Choose
@@ -28,10 +23,10 @@ using the Diagonally Implicit Runge Kutta methods and Newton solver for the solu
 - DIRK(5,4): 5 stages, 4th order, [3]
 
 ### Tested with functions:
-- <img src="https://latex.codecogs.com/gif.latex? f = y+t, \qquad y_0 = 0 " /> 
-- <img src="https://latex.codecogs.com/gif.latex? f = yt, \qquad y_0 = 1 " />
-- <img src="https://latex.codecogs.com/gif.latex? f = t^n,\qquad n \in \mathbb{N}^+ \qquad y_0 = 1 " />  
-- <img src="https://latex.codecogs.com/gif.latex? f = -10000\left( y-\sin(t+\pi/4) \right) + \cos(t + \pi/4), \qquad y_0 = \sin(\pi/4)" /> 
+- <a href="https://www.codecogs.com/eqnedit.php?latex=f&space;=&space;y&plus;t,&space;\qquad&space;y_0&space;=&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f&space;=&space;y&plus;t,&space;\qquad&space;y_0&space;=&space;0" title="f = y+t, \qquad y_0 = 0" /></a> 
+- <a href="https://www.codecogs.com/eqnedit.php?latex=f&space;=&space;yt,&space;\qquad&space;y_0&space;=&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f&space;=&space;yt,&space;\qquad&space;y_0&space;=&space;1" title="f = yt, \qquad y_0 = 1" /></a>
+- <a href="https://www.codecogs.com/eqnedit.php?latex=f&space;=&space;t^n,\qquad&space;n&space;\in&space;\mathbb{N}^&plus;&space;\qquad&space;y_0&space;=&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f&space;=&space;t^n,\qquad&space;n&space;\in&space;\mathbb{N}^&plus;&space;\qquad&space;y_0&space;=&space;1" title="f = t^n,\qquad n \in \mathbb{N}^+ \qquad y_0 = 1" /></a> 
+- <a href="https://www.codecogs.com/eqnedit.php?latex=f&space;=&space;-10000\left(&space;y-\sin(t&plus;\pi/4)&space;\right)&space;&plus;&space;\cos(t&space;&plus;&space;\pi/4),&space;\qquad&space;y_0&space;=&space;\sin(\pi/4)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f&space;=&space;-10000\left(&space;y-\sin(t&plus;\pi/4)&space;\right)&space;&plus;&space;\cos(t&space;&plus;&space;\pi/4),&space;\qquad&space;y_0&space;=&space;\sin(\pi/4)" title="f = -10000\left( y-\sin(t+\pi/4) \right) + \cos(t + \pi/4), \qquad y_0 = \sin(\pi/4)" /></a>
 
 
 ### References
